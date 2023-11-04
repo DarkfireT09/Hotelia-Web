@@ -1,0 +1,28 @@
+.content {
+    padding: 1rem;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../img/login/bg-login.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    /*width: 100%;*/
+    padding: 1rem 2rem;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
