@@ -67,7 +67,6 @@ h5 {
         width: max-content;
         background: var(--fondo);
         opacity: 0.9;
-        /* Copilot I want to separate the classes bienvenidos and registroForm */
         align-items: center;
         margin: 2rem 3rem 2rem 3rem;
     }
@@ -76,7 +75,19 @@ h5 {
         font-size: 2.5rem;
         color: var(--negro2);
         margin-bottom: 2rem;
-        align-self: center;
+        text-align: center;
+    }
+
+    .filaForm{
+        display: flex;
+        flex-direction: row; 
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .itemForm{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 1rem 1rem 1rem;
     }
 
 }
