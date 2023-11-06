@@ -7,13 +7,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .card {
     background: rgba(255, 255, 255, 0.7);
     border-radius: 8px;
-    /*width: 100%;*/
+    width: 100%;
     padding: 1rem 2rem;
 }
 
@@ -25,4 +25,63 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.5rem 3rem;
+    border-radius: 0.2rem;
+    border-width: 0;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0.1rem 0.1rem 0 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--azuloscuro);
+    color: white;
+}
+
+.btn-icon {
+    font-size: 2em;
+}
+
+.btn-icon:hover button{
+    background-color: var(--azulnegro);
+}
+
+.btn-dark {
+    background-color: var(--azulnegro);
+    color: white;
+}
+
+.profile-form {
+    margin-left: 1rem;
+    flex-wrap: wrap;
+}
+
+.col {
+    padding: 0 0.5rem;
+}
+
+label, legend {
+    margin-top: 0.5rem;
+}
+
+input:not([type=checkbox]):not([type=radio]) {
+    border-width: 0;
+    width: 100%;
+    min-height: 1.5rem;
+    border-radius: 2px;
+    box-shadow: 0.1rem 0.1rem 0 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+button[form=pwd-form], button[form=user-info] {
+    margin-left: 1.5rem;
+}
+
+button h2{
+    font-weight: lighter;
 }
