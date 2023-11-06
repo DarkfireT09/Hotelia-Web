@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/habitaciones.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="layout-container">
+        <div class="side-menu">
+            <div class="d-flex flex-column">
+                <div class="brand">
+                    <img class="logo-lg" src="../../assets/img/Hotelia horizontal blanco.svg">
+                    <img class="logo-sm" src="../../assets/img/hotelia%20campana.svg">
+                    <div class="user">
+                        <img class="avatar" src="../../assets/img/opinion/user1.png">
+                        <div class="user-info">
+                            <p>Angie Vargas</p>
+                            <small>angievargas2@gmail.com</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <a href="index.html" class="item">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Habitaciones</span>
+                    </a>
+                    <a href="index.html" class="item">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                        <span>Reservas</span>
+                    </a>
+                    <a href="index.html" class="item">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Habitaciones</span>
+                    </a>
+                    <a href="index.html" class="item">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                        <span>Habitaciones</span>
+                    </a>
+                </div>
+            </div>
+            <a class="logout-btn" href="#">
+                <i class="fa-solid fa-sign-out"></i>
+                <span>Cerrar sesión</span>
+            </a>
+        </div>
+        <div class="d-flex flex-column">
+            <div class="content">
+                <form action="">
+                    <h1>Registro de nueva habitación </h1>
+                    <div class="espacios"><label for="nomHa">Nombre habitación</label>
+                        <input type="text" name="nomHa"></div>
+                    <div class="espacios"><label for="numeroHa">N. de habitación</label>
+                        <input type="number" name="numeroHa"></div>
+                    <div class="camasHues">
+                        <div class="camas">
+                            <label for="camas">N. camas</label><br>
+                            <input type="number" name="camas">
+                        </div>
+                        <div class="huespedes">
+                            <label for="hues">N. huespedes</label><br>
+                            <input type="number" name="hues">
+                        </div>
+                    </div>
+                    <div class="espacios"><label for="valor">Valor reserva</label>
+                        <input type="number" name="valor"></div>
+                    <div class="espacios"><label for="imagen">Imagen principal</label>
+                        <input type="text" name="imagen"></div>
+                    <div class="espacios"><label for="imagenSe">Imagen segundaria</label>
+                        <input type="text" name="imagenSe"></div>
+                    <div class="espaciosGrande"><label for="descripcion">Descripcion</label>
+                        <input type="text" name="descripcion" id="mas"></div>
+                    <div class="iconos">
+                        <input type="checkbox">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        <input type="checkbox" id="mas2">
+                        <i class="fa-solid fa-tv" id="mas3"></i>
+                        <input type="checkbox">
+                        <i class="fa-solid fa-wifi"></i>
+                        <input type="checkbox">
+                        <i class="fa-solid fa-snowflake"></i>
+                        <input type="checkbox" id="mas2">
+                        <i class="fa-solid fa-ring" id="mas3"></i>
+                        <input type="checkbox">
+                        <i class="fa-solid fa-dumbbell"></i>
+                </form>
+
+                    </div>
+                    <button>Registrar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
