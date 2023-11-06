@@ -19,20 +19,32 @@
             </div>
             <div class="formulario">
                 <form>
-                    <label for="Tipo de documento">Tipo de documento </label>
-                    <select name="Tipo de documento" id="Tipo de documento">
-                        <option value="Cedula de ciudadania">Cedula de ciudadania</option>
-                        <option value="Cedula de extranjeria">Cedula de extranjeria</option>
-                        <option value="Pasaporte">Pasaporte</option>
-                    </select>
 
-                    <label for="Numero de documento">Numero de documento</label>
-                    <input type="number" name="Numero de documento" id="Numero de documento">
-                    <br>
-                    <label for="Nombres">Nombres</label>
-                    <input type="text" name="Nombres" id="Nombres">
-                    <label for="Apellidos">Apellidos</label>
-                    <input type="text" name="Apellidos" id="Apellidos">
+                    <div>
+                        <label for="Tipo de documento">Tipo de documento </label>
+                    
+                        <select name="Tipo de documento" id="Tipo de documento">
+                            <option value="Cedula de ciudadania">Cedula de ciudadania</option>
+                            <option value="Cedula de extranjeria">Cedula de extranjeria</option>
+                            <option value="Pasaporte">Pasaporte</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="Numero de documento">Numero de documento</label>
+                        <input type="number" name="Numero de documento" id="Numero de documento">
+                    </div>
+
+                    <div>
+                        <label for="Nombres">Nombres</label>
+                        <input type="text" name="Nombres" id="Nombres">
+                    </div>
+                    
+                    <div>
+                        <label for="Apellidos">Apellidos</label>
+                        <input type="text" name="Apellidos" id="Apellidos">
+                    </div>
+                   
                     <br>
                     <label for="Fecha de nacimiento">Fecha de nacimiento</label>
                     <input type="date" name="Fecha de nacimiento" id="Fecha de nacimiento">
@@ -71,6 +83,7 @@
                 <div class="terminos y condiciones">
                     <input type="checkbox" name="terminos y condiciones" id="terminos y condiciones">
                     <label for="terminos y condiciones">Acepto terminos y condiciones</label>
+                    <br>
                     <button>Registrarse</button>
                 </div>
             </div>
