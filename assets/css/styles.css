@@ -188,6 +188,8 @@ nav {
     flex-direction: column;
 }
 
+
+
 .logout-btn {
     background-color: var(--negro);
     color: var(--blanco);
