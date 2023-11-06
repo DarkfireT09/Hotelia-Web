@@ -63,10 +63,10 @@ h5 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        height: 55rem;
-        width: max-content;
+        height: 52rem;
+        width: 60rem;
         background: var(--fondo);
-        opacity: 0.9;
+        opacity: 0.95;
         align-items: center;
         margin: 2rem 3rem 2rem 3rem;
     }
@@ -84,10 +84,28 @@ h5 {
         margin: 1rem 1rem 1rem 1rem;
     }
 
+    .columnaForm{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
     .itemForm{
         display: flex;
         flex-direction: column;
         margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .terminosCondiciones{
+        text-align: center;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .regButton{
+        background-color: var(--negro2);
+        color: var(--blanco);
+        width: 10rem;
+        height: 2rem;
     }
 
 }
