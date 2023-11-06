@@ -45,6 +45,7 @@ h5 {
     body{
         display: flex;
         flex-direction: row; 
+        font-size: large;
     }
 
     .bienvenidos{
@@ -57,6 +58,11 @@ h5 {
         opacity: 0.9;
         align-items: center;
         justify-content: center;
+    }
+
+    .bienvenidos img{
+        margin: 1rem 2rem 1rem 2rem;
+
     }
 
     .registroForm{
@@ -82,6 +88,7 @@ h5 {
         display: flex;
         flex-direction: row; 
         margin: 1rem 1rem 1rem 1rem;
+
     }
 
     .columnaForm{
