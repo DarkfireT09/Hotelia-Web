@@ -38,6 +38,52 @@ h5 {
 
 
 @media screen and (max-width: 768px){
+    body{
+        display: flex;
+        flex-direction: column; 
+        font-size: large;
+    }
+
+    .bienvenidos{
+        display: flex;
+        flex-direction: column;
+        width: max-width;   
+        color: var(--blanco);
+        background: linear-gradient(to right, #357baa, #0C3C59);
+        opacity: 0.9;
+        align-items: center;
+        justify-content: center;
+    }    
+
+    .registroForm{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: var(--fondo);
+        opacity: 0.95;
+        align-items: center;
+        margin: 2rem 3rem 2rem 3rem;
+        height: 40rem;
+
+    }
+
+
+
+    .itemForm{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .terminosCondiciones{
+        text-align: center;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .regButton{
+        background-color: var(--negro2);
+        color: var(--blanco);
+    }
 
 }
 
@@ -62,7 +108,6 @@ h5 {
 
     .bienvenidos img{
         margin: 1rem 2rem 1rem 2rem;
-
     }
 
     .registroForm{
@@ -97,10 +142,17 @@ h5 {
         margin: 1rem 1rem 1rem 1rem;
     }
 
+    .parForm{
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 1rem 1rem 1rem;
+        justify-content: space-between;
+    }
+
     .itemForm{
+        margin: 1rem 1rem 1rem 1rem;
         display: flex;
         flex-direction: column;
-        margin: 1rem 1rem 1rem 1rem;
     }
 
     .terminosCondiciones{
