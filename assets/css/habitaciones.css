@@ -4,8 +4,8 @@
     flex-direction: row;
 }
 
-input:not([type="checkbox"]):not([type="radio"]) {
-    box-shadow: 1px 1px 1px 1px #888888;
+input:not([type="checkbox"]):not([type="button"]) {
+    box-shadow: 0 2px 0 0 #888888;
     margin-right: 25px;
 }
 
@@ -18,23 +18,32 @@ label {
     justify-content: space-around;
     align-items: center;
     margin: 10px;
+    width: 100%;
 }
 
 .register {
     display: flex;
     justify-content: center;
+
 }
 
 .register button {
     background-color: #333333;
-    padding: 10px 20px;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 7px;
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
 }
 .formbox{
     background-color: #ECECEB;
     border-radius: 10px;
     padding: 20px;
-
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
+
 @media screen and (max-width: 768px) {
 
     .content {
@@ -51,6 +60,11 @@ label {
     .test {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
 }
