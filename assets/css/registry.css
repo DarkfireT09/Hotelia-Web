@@ -38,6 +38,66 @@ h5 {
 
 
 @media screen and (max-width: 768px){
+    body{
+        display: flex;
+        flex-direction: column; 
+        font-size: medium;
+    }
+
+    .bienvenidos{
+        display: flex;
+        flex-direction: column;  
+        color: var(--blanco);
+        background: linear-gradient(to right, #357baa, #0C3C59);
+        opacity: 0.9;
+        align-items: center;
+        justify-content: center;
+        height: 6rem;
+        width: 100%;
+
+    }/* */
+
+
+    .bienvenidos img{
+        width: 30%;
+    }
+
+    .registroForm{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: var(--fondo);
+        opacity: 0.95;
+        align-self: center;
+    }
+
+    .terminosCondiciones{
+        text-align: center;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .regButton{
+        background-color: var(--negro2);
+        color: var(--blanco);
+        width: 10rem;
+        height: 2rem;
+    }
+
+    .filaFormM{
+        display: flex;
+        flex-direction: roww; 
+    }
+
+    .columnaForm{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+
+
+
+
 
 }
 
@@ -62,7 +122,6 @@ h5 {
 
     .bienvenidos img{
         margin: 1rem 2rem 1rem 2rem;
-
     }
 
     .registroForm{
