@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-image: url("../img/la-ciudad-de-20-minutos-o-el-plan-de-melbourne-para-crear-la-urbe-perfecta.jpg");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Marcellus', serif;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    body{
+        display: flex;
+        flex-direction: column; 
+        font-size: large;
+    }
+
+    .bienvenidos{
+        display: flex;
+        flex-direction: column;
+        width: max-width;   
+        color: var(--blanco);
+        background: linear-gradient(to right, #357baa, #0C3C59);
+        opacity: 0.9;
+        align-items: center;
+        justify-content: center;
+    }    
+
+    .titulo{
+        text-align: center;
+    }
+
+    .registroForm{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: var(--fondo);
+        opacity: 0.95;
+        align-items: center;
+        margin: 2rem 3rem 2rem 3rem;
+        height: 40rem;
+        border-radius: 6px;
+    }
+
+
+
+    .itemForm{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .terminosCondiciones{
+        text-align: center;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .regButton{
+        background-color: var(--negro2);
+        color: var(--blanco);
+    }
+
+}
+
+@media screen and (min-width: 769px){
+    body{
+        display: flex;
+        flex-direction: row; 
+        font-size: large;
+    }
+
+    .bienvenidos{
+        display: flex;
+        flex-direction: column;
+        height: 55rem;
+        width: max-content;   
+        color: var(--blanco);
+        background: linear-gradient(to right, #357baa, #0C3C59);
+        opacity: 0.9;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .bienvenidos img{
+        margin: 1rem 2rem 1rem 2rem;
+    }
+
+    .registroForm{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 52rem;
+        width: 60rem;
+        background: var(--fondo);
+        opacity: 0.95;
+        align-items: center;
+        margin: 2rem 3rem 2rem 3rem;
+    }
+
+    .registroForm h1{
+        font-size: 2.5rem;
+        color: var(--negro2);
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .filaForm{
+        display: flex;
+        flex-direction: row; 
+        margin: 1rem 1rem 1rem 1rem;
+
+    }
+
+    .columnaForm{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .parForm{
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 1rem 1rem 1rem;
+        justify-content: space-between;
+    }
+
+    .itemForm{
+        margin: 1rem 1rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .terminosCondiciones{
+        text-align: center;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .regButton{
+        background-color: var(--negro2);
+        color: var(--blanco);
+        width: 10rem;
+        height: 2rem;
+    }
+
+}
+
+
+
+
