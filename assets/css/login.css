@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    color:aliceblue;
+    color:#f0f8ff;
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     background: url(../img/login/bg-login.png) no-repeat center/cover fixed;
 
 }
 
 @media screen and (min-width: 769px){
-
 
 .contenedor{
     background-color: #1C92E080;;
@@ -57,14 +60,14 @@ body{
 .fill_in input{
     height: 23px;
     padding: 1%;
-    border: 1px solid aliceblue;
+    border: 1px solid #f0f8ff;
     border-radius: 5px;
     margin-bottom: 1%;
 }
 
 .contenido button{
     background-color: black;
-    color: aliceblue;
+    color: #f0f8ff;
     width: 70%;
     border-radius: 5px;
     margin-top: 8%;
@@ -123,7 +126,7 @@ body{
 .fill_in label{
     margin-top: 7%;
     font-size: 20px;
-    color: aliceblue;
+    color: #f0f8ff;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -134,7 +137,7 @@ body{
 
 .contenido button{
     background-color: black;
-    color: aliceblue;
+    color: #f0f8ff;
     width: 70%;
     border-radius: 5px;
     height: 30px;
