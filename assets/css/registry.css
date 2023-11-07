@@ -55,6 +55,10 @@ h5 {
         justify-content: center;
     }    
 
+    .titulo{
+        text-align: center;
+    }
+
     .registroForm{
         display: flex;
         flex-wrap: wrap;
@@ -64,7 +68,7 @@ h5 {
         align-items: center;
         margin: 2rem 3rem 2rem 3rem;
         height: 40rem;
-
+        border-radius: 6px;
     }
 
 
