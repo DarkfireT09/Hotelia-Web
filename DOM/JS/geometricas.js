@@ -10,25 +10,38 @@ function perimetroCirculo (){
     alert(`El perímetro del círculo con radio ${radioCirc} es: ${perimetroCirc}`);//pendiente hacer que lo imprima en el html
 }
 
-/*
+
 function areaCuadrado (){
-    var lado = document.getElementById("lado").value;
+    var lado = parseFloat(document.getElementById("ladocuad").value);
     var area = Math.pow(lado,2);
-    document.getElementById("ladoCuad").value = lado;
-    document.getElementById("areaCuad").value = area;
+    alert(`El área del cuadrado con lado ${lado} es: ${area}`);//pendiente hacer que lo imprima en el html
 }
 
 function perimetroCuadrado (){
-    var lado = document.getElementById("lado").value;
+    var lado = parseFloat(document.getElementById("ladocuad").value);
     var perimetro = lado * 4;
-    document.getElementById("perimetro").value = perimetro;
+    alert(`El perímetro del cuadrado con lado ${lado} es: ${perimetro}`);//pendiente hacer que lo imprima en el html
+}
+
+function areaRectangulo (){
+    var base = parseFloat(document.getElementById("baseR").value);
+    var altura = parseFloat(document.getElementById("alturaR").value);
+    var area = base * altura;
+    alert(`El área del rectángulo con base ${base} y altura ${altura} es: ${area}`);//pendiente hacer que lo imprima en el html
+}
+
+function perimetroRectangulo (){
+    var base = parseFloat(document.getElementById("baseR").value);
+    var altura = parseFloat(document.getElementById("alturaR").value);
+    var perimetro = 2 * (base + altura);
+    alert(`El perímetro del rectángulo con base ${base} y altura ${altura} es: ${perimetro}`);//pendiente hacer que lo imprima en el html
 }
 
 function areaTriangulo (){
-    var base = document.getElementById("base").value;
-    var altura = document.getElementById("altura").value;
+    var base = parseFloat(document.getElementById("baseT").value);
+    var altura = parseFloat(document.getElementById("alturaT").value);
     var area = (base * altura)/2;
-    document.getElementById("area").value = area;
+    alert(`El área del triángulo con base ${base} y altura ${altura} es: ${area}`);//pendiente hacer que lo imprima en el html
 }
 
 function perimetroTriangulo (){
@@ -36,7 +49,7 @@ function perimetroTriangulo (){
     var lado2 = document.getElementById("lado2").value;
     var lado3 = document.getElementById("lado3").value;
     var perimetro = parseInt(lado1) + parseInt(lado2) + parseInt(lado3);
-    document.getElementById("perimetro").value = perimetro;
+    alert(`El perímetro del triángulo con lados ${lado1}, ${lado2} y ${lado3} es: ${perimetro}`);//pendiente hacer que lo imprima en el html
 }
 
-*/
+
