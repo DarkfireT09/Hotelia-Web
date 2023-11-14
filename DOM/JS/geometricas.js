@@ -1,15 +1,13 @@
 function areaCirculo (){
-    var radio = document.getElementById("radioCirc").value;
-    var area = Math.PI * Math.pow(radio,2);    
-    document.getElementById("areaCirc").value = area;
-    alert("El área del círculo es: " + area);
+    var radioCirc = parseFloat(document.getElementById("radioC").value);
+    var areaCirc = Math.PI * radioCirc * radioCirc;    
+    alert(`El área del círculo con radio ${radioCirc} es: ${areaCirc}`);//pendiente hacer que lo imprima en el html
 }
 
 function perimetroCirculo (){
-    var radio = document.getElementById("radioCirc").value;
-    var perimetro = 2 * Math.PI * radio;
-    document.getElementById("perimetro").value = perimetro;
-    alert("El perímetro del círculo es: " + perimetro);
+    var radioCirc = parseFloat(document.getElementById("radioC").value);
+    var perimetroCirc = 2 * Math.PI * radioCirc;    
+    alert(`El perímetro del círculo con radio ${radioCirc} es: ${perimetroCirc}`);//pendiente hacer que lo imprima en el html
 }
 
 /*
@@ -40,4 +38,5 @@ function perimetroTriangulo (){
     var perimetro = parseInt(lado1) + parseInt(lado2) + parseInt(lado3);
     document.getElementById("perimetro").value = perimetro;
 }
+
 */
