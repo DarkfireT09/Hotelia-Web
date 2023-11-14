@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../JS/degrees.js"></script>
+    <title>Ejercicio2</title>
+</head>
+<body>
+
+
+<form action="" method="post">
+    <label for="input">Ingrese los grados</label>
+    <input type="text" name="input" id="input">
+    <br>
+    <label for="inputUnit">Vas a convertir de:</label>
+    <select name="inputUnit" id="inputUnit">
+        <option value="F">Fahrenheit</option>
+        <option value="C">Celsius</option>
+        <option value="K">Kelvin</option>
+    </select>
+    <br>
+    <label for="outputUnit">Deseas convertir a:</label>
+    <select name="outputUnit" id="outputUnit">
+        <option value="F">Fahrenheit</option>
+        <option value="C">Celsius</option>
+        <option value="K">Kelvin</option>
+    </select>
+    <br>
+    <button type="submit" onclick="convertTemperature()">
+        Convertir
+    </button>
+
+</form>
+</body>
+</html>
