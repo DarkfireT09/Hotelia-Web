@@ -1,0 +1,9 @@
+Integrantes:
+	* Camilo Fernandez
+	* Daniel Leyva
+	* Ana Garzón
+	* Guillermo Ribero
+	* Felipe Martinez
+	* Luna Gutierrez
+Repositorio:
+	link: https://github.com/DarkfireT09/Hotelia-Web

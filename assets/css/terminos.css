@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+* {
+    margin: 0;
+}
+
+.recuadro{
+    display: flex;
+    flex-direction: column;
+    border: .2rem solid black ;
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (min-width: 769px){
+
+    .recuadro h1{
+        background: linear-gradient(to right, #357baa, #0C3C59);
+        color: var(--blanco);
+        text-align: center;
+    }
+
+    .recuadro button{
+        background-color: #000;
+        color: white;
+        width: 7rem;
+        margin: 1rem 0rem 1rem 25rem;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/registry.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bienvenidos">
+        <img src="../assets/img/Hotelia horizontal blanco.svg" alt="">
+        <h2>Eres más que bienvenido</h2>
+    </div>
+
+    <div class="registroForm">
+        <form>
+            <div class="titulo"> 
+                <h1>Registrate</h1>
+            </div>
+            <div class="formulario">
+                <form>
+                    <div class="columnaForm">
+                            <div class="parForm">
+
+                                <div class="itemForm" >
+                                    <label for="Tipo de documento">Tipo de documento </label>
+                                    <select name="Tipo de documento" id="Tipo de documento">
+                                    <option value="Cedula de ciudadania">Cedula de ciudadania</option>
+                                    <option value="Cedula de extranjeria">Cedula de extranjeria</option>
+                                    <option value="Pasaporte">Pasaporte</option>
+                                    </select>
+                                </div>
+                                <div class="itemForm">
+                                    <label for="Numero de documento">Numero de documento</label>
+                                    <input type="number" name="Numero de documento" id="Numero de documento">
+                                </div>
+                            </div>
+
+                            <div class="parForm">
+                                <div class="itemForm">
+                                    <label for="Nombres">Nombres</label>
+                                    <input type="text" name="Nombres" id="Nombres">
+                                </div>
+
+                                <div class="itemForm">
+                                    <label for="Apellidos">Apellidos</label>
+                                    <input type="text" name="Apellidos" id="Apellidos">
+                                </div>
+
+                            </div>
+                            
+                            <div class="parForm">
+                                <div class="itemForm">
+                                    <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+                                    <input type="date" name="Fecha de nacimiento" id="Fecha de nacimiento">
+                                </div>
+                                <div class="itemForm">
+                                    <label for="Género">Género </label>
+                                    <div class="filaForm">
+                                        <input type="radio" checked name="Género" id="Género"> Masculino 
+                                        <input type="radio" name="Género" id="Género"> Femenino
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="parForm">
+
+                                <div class="itemForm">
+                                    <label for="Correo electronico">Correo electronico</label>
+                                    <input type="email" name="Correo electronico" id="Correo electronico">
+                                </div>
+
+                                <div class="itemForm">
+                                    <label for="Numero de telefono">Numero de telefono</label>
+                                    <input type="number" name="Numero de telefono" id="Numero de telefono">
+                                </div>
+
+                            </div>
+                            
+                            <div class="parForm">
+                                <div class="itemForm">
+                                    <label for="País de origen">País de origen </label>
+                                    <select name="País de origen" id="País de origen">
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                        <option value="Ecuador">Ecuador</option>
+                                        <option value="Peru">Peru</option>
+                                        <option value="Brasil">Brasil</option>
+                                        <option value="Argentina">Argentina</option>
+                                        <option value="Chile">Chile</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="Paraguay">Paraguay</option>
+                                        <option value="Bolivia">Bolivia</option>
+                                    </select>
+                                </div>
+
+                                                            
+                                <div class="itemForm">
+                                    <label for="foto">Foto</label>
+                                    <input type="file" name="foto" id="foto">
+                                </div>
+                                
+                            </div>
+
+                            <div class="parForm">
+                                <div class="itemForm">
+                                    <label for="Contraseña">Contraseña</label>
+                                    <input type="password" name="Contraseña" id="Contraseña">
+                                </div>
+
+                                <div class="itemForm">
+                                    <label for="Confirmar contraseña">Confirmar contraseña</label>
+                                    <input type="password" name="Confirmar contraseña" id="Confirmar contraseña">        
+                                </div>    
+                            </div>
+                    </div>
+                    
+                    
+                </form>
+                <div class="terminosCondiciones">
+                    <input type="checkbox" name="terminos y condiciones" id="terminos y condiciones">
+                    <label for="terminos y condiciones">Acepto terminos y condiciones</label>
+                    <br>
+                    <button class="regButton">Registrarse</button>
+                </div>
+            </div>
+            
+        </div>
+            
+    </div>
+
+</body>
+</html>
