@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+#courses {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+}
+
+#courses>div {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#courses select {
+    min-width: 5rem;
+    min-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#courses button {
+    cursor: pointer;
+    min-width: 5rem;
+    min-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
