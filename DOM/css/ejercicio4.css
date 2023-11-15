@@ -40,3 +40,7 @@ html {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+#courses button:hover {
+    background-color: #ccc;
+}
