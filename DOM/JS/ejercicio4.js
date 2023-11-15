@@ -27,8 +27,10 @@ form.addEventListener(
             return e.name === data.name && e.last === data.last && e.course === data.course
         })) {
             console.log("la respuesta es correcta")
+            form.reset()
         } else {
             console.log("la respuesta es incorrecta")
+            form.reset()
         }
         e.preventDefault()
     }
