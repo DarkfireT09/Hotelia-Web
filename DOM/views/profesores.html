@@ -1,23 +1,39 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profesores.css">
     <title>Document</title>
 </head>
 <body>
+    <h1>Profesor</h1>
+    <h3>Elija el nombre y apellido del profesor y la asignatura que está dictando</h3>
     <form>
-        <div class="elegir_profesor">
-            <label for="Profesor">Profesor(a) </label>
-            <select name="profesor" id="profesor">
-                <option value="Tatiana Cabrera">Tatiana Cabrera</option>
-                <option value="Andres Barrera">Andrés Barrera</option>
-                <option value="Pedro Wightman">Pedro Wightman</option>
-                <option value="Edgar Andrade">Edgar Andrade</option>
-                <option value="Daniel Bojacá">Daniel Bojacá</option>
-                <option value="Norma Sarmiento">Norma Sarmiento</option>
+        <div class="elegir_nombre">
+            <label for="Nombre">Nombre del Profesor</label>
+            <select name="nombre" id="nombre">
+                <option value="Tatiana">Tatiana</option>
+                <option value="Andres">Andrés</option>
+                <option value="Pedro">Pedro</option>
+                <option value="Edgar">Edgar</option>
+                <option value="Daniel">Daniel</option>
+                <option value="Norma">Norma</option>
             </select>
         </div>
+
+        <div class="elegir_apellido">
+            <label for="Apellido">Apellido del Profesor</label>
+            <select name="apellido" id="apellido">
+                <option value="Cabrera">Cabrera</option>
+                <option value="Barrera">Barrera</option>
+                <option value="Wightman">Wightman</option>
+                <option value="Andrade">Andrade</option>
+                <option value="Bojacá">Bojacá</option>
+                <option value="Sarmiento">Sarmiento</option>
+            </select>
+        </div>
+
         <div class="elegir_materia">
             <label for="Materia">Materia</label>
             <select name="materia" id="materia">
@@ -25,10 +41,7 @@
                 <option value="Capstone">Capstone Project</option>
                 <option value="Software">Diseño y Arquitectura de Software</option>
                 <option value="Desarrollo Web">Desarrollo Web</option>
-                <option value="Logica 2">Lógica para Ciencias de la Computación</option>
                 <option value="Calculo 2">Cálculo 2</option>
-                <option value="Algebra">Álgebra Lineal</option>
-                <option value="Algoritmos">Algorítmos y Estructura de Datos</option>
                 <option value="Grafos">Teoría de Grafos</option>
             </select>
         </div>
