@@ -22,6 +22,8 @@ li {
     list-style: none;
     margin: 2rem 0;
     display: flex;
+    font-weight: bolder;
+    background-color: yellowgreen;
 }
 
 li::before {
