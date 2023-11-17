@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/profesores.css">
+    <script src="../JS/profesores.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Profesor</h1>
+    <h1>PROFESOR</h1>
     <h3>Elija el nombre y apellido del profesor y la asignatura que está dictando</h3>
-    <form>
-        <div class="elegir_nombre">
-            <label for="Nombre">Nombre del Profesor</label>
+    <form action="" method="post">
+        <label for="nombre">Nombre del Profesor</label>
             <select name="nombre" id="nombre">
                 <option value="Tatiana">Tatiana</option>
                 <option value="Andres">Andrés</option>
@@ -20,22 +20,18 @@
                 <option value="Daniel">Daniel</option>
                 <option value="Norma">Norma</option>
             </select>
-        </div>
 
-        <div class="elegir_apellido">
-            <label for="Apellido">Apellido del Profesor</label>
+        <label for="apellido">Apellido del Profesor</label>
             <select name="apellido" id="apellido">
                 <option value="Cabrera">Cabrera</option>
                 <option value="Barrera">Barrera</option>
                 <option value="Wightman">Wightman</option>
                 <option value="Andrade">Andrade</option>
-                <option value="Bojacá">Bojacá</option>
+                <option value="Bojaca">Bojacá</option>
                 <option value="Sarmiento">Sarmiento</option>
             </select>
-        </div>
-
-        <div class="elegir_materia">
-            <label for="Materia">Materia</label>
+        
+        <label for="materia">Materia</label>
             <select name="materia" id="materia">
                 <option value="Teoria de la Computacion">Teoría de la Computación</option>
                 <option value="Capstone">Capstone Project</option>
@@ -44,7 +40,10 @@
                 <option value="Calculo 2">Cálculo 2</option>
                 <option value="Grafos">Teoría de Grafos</option>
             </select>
-        </div>
+
+        <button type="submit" onclick="validateTeacher()">
+            VALIDAR INFORMACIÓN
+        </button>
     </form>
 </body>
 </html>
