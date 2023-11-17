@@ -1,68 +1,53 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
 
 body {
-    background-image: url("../img/797.jpg");
-    background-size: cover;
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
 }
 
-h1 {
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #000000;
-    text-align: center;
+.container-fluid {
     padding: 20px;
 }
 
+.resultado {
+    margin-top: 20px;
+}
+
 .card {
-    text-align: center;
-    margin: 50px auto;
-    background-color: transparent;
-    padding: 0;
-
-}
-
-.card img {
-    max-height: 200px;
-    margin: 10px auto;
-}
-
-.card-header {
-    background-color: #283071;
-    margin: 0;
-    color: #FFFFFF;
-    font-weight: bold;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-body {
-    background-color: transparent;
+    text-align: center;
 }
 
-.ejercicios {
-    background-color: #FFFFFF;
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
 }
 
-.ejercicios img {
-    margin: 30px auto;
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
 
-.modal-dialog {
-    box-shadow: 4px 4px 4px #00FF00;
 
+.form-label {
+    font-weight: bold;
 }
 
-.modal-header {
-    background-color: #283071;
-    color: #FFFFFF;
+.form-control {
+    margin-bottom: 10px;
 }
 
-.modal-footer {
-    background-color: #283071;
-    color: #FFFFFF;
+.btn-primary[href] {
+    color: #fff;
+    text-decoration: none;
 }
 
-.modal-body {
-    background-color: rgba(254, 212, 251, 0.5);
+.btn-primary[href]:hover {
+    color: #fff;
+    text-decoration: none;
 }
