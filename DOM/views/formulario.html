@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <script src="../JS/formulario.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMULARIO</h1>
+    <form action="" method="post">
+        <label for="tipoDocumento">Tipo de Documento</label>
+            <select name="tipoDocumento" id="tipoDocumento">
+                <option value="cedula">Cédula de Ciudadanía</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="tarjeta">Tarjeta de Identidad</option>
+                <option value="registro">Registro Civil</option>
+            </select>
+        <br>
+
+        <label for="documento">Documento</label>
+            <input type="text" name="documento" id="documento">
+        <br>
+
+        <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+        <br>
+
+        <label for="apellido">Apellidos</label>
+            <input type="text" name="apellido" id="apellido">
+        <br>
+
+        <label for="nacimiento">Fecha de Nacimiento</label>
+            <input type="date" name="nacimiento" id="nacimiento">
+        <br>
+
+        <label for="correo">Correo Electrónico</label>
+            <input type="text" name="correo" id="correo">
+        <br>
+
+        <label for="contraseña">Contraseña</label>
+            <input type="password" name="constraseña" id="contraseña">
+        <br>
+
+        <label for="valContraseña">Confirmar contraseña</label>
+            <input type="password" name="valContraseña" id="valContraseña">
+        <br>
+
+        <label for="terminos">Aceptar Términos de Uso</label>
+            <input type="checkbox" name="terminos" id="terminos">
+        <br>
+
+        <button type="submit" onclick="validateForm()">
+            ENVIAR INFORMACIÓN
+        </button>
+    </form>
+</body>
+</html>
