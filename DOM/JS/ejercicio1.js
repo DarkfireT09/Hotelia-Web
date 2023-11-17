@@ -8,13 +8,13 @@ function longitud() { //por declaraciÃ³n
 let mayusculas = function () { //funciÃ³n anÃ³nima
     let palabra = document.getElementById('palabra').value
     let text = palabra.toUpperCase()
-    alert("Su palabra en mayÃºsculas " + text + " !");
+    alert("Su palabra en mayúsculas " + text + " !");
 }
 
 let minusculas = function minusculas() { //por expresiÃ³n
     let palabra = document.getElementById('palabra').value
     let text = palabra.toLowerCase()
-    alert("Su palabra en minÃºsculas " + text);
+    alert("Su palabra en minúsculas " + text);
 }
 
 function primercar() {
