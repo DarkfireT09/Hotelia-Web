@@ -20,6 +20,7 @@ const campos = {
 }
 
 const validarFormulario = (e) => {
+	console.log(e.target.name)
 	switch (e.target.name) {
 		case "documento":
 			validarCampo(expresiones.documento, e.target, 'documento');
@@ -37,10 +38,10 @@ const validarFormulario = (e) => {
 			validarCampo(expresiones.correo, e.target, 'correo');
 		break;
 
-		case "contrasena":
+		case "constrasena":
 			validarCampo(expresiones.contrasena, e.target, 'contrasena');
 		break;
-		case "valContraseña":
+		case "valContrasena":
 			validarvalContrasena();
 		break;
 	}
@@ -67,6 +68,8 @@ const validarCampo = (expresion, input, campo) => {
 const validarvalContrasena = () => {
 	const inputContrasena = document.getElementById('contrasena');
 	const inputvalContrasena = document.getElementById('valContrasena');
+	console.log(inputContrasena)
+	console.log(inputvalContrasena)
 
 	if(inputContrasena.value !== inputvalContrasena.value){
 		document.getElementById(`grupo__valContrasena`).classList.add('formulario__grupo-incorrecto');
@@ -86,8 +89,8 @@ const validarvalContrasena = () => {
 }
 
 const validarEdad = () => {
-    const inputNacimiento = document.getElementById('nacimiento');
-    const anioNacimiento = inputNacimiento.getFullYear();
+    const inputNacimiento = document.getElementById('nacimiento').value;
+    const anioNacimiento = (new Date(inputNacimiento)).getFullYear();
     const fechaActual = new Date();
     const anioActual = fechaActual.getFullYear();
     if(anioActual - anioNacimiento <= 18){
