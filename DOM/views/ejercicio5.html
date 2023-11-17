@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/ejercicio5.js"></script>
+    <link rel="stylesheet" href="../css/ejercicio5.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <button type="button" class="btn btn-primary" onclick="location.href='../index.html'">Volver</button>
+
+    <h1>Figuras geometricas</h1>
+    <div>
+        <h3>Seleccione la figura</h3>
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#circulo"><i class="bi bi-circle"></i> Circulo</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#cuadrado"> <i class="bi bi-square-fill"> </i> Cuadrado</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#rectangulo">Rectangulo</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#triangulo">Triangulo</button>
+        
+    </div>
+
+
+    <!-- Modal Circulo-->
+            
+    <div class="modal fade" tabindex="-1" id="circulo" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                    Circulo
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-group">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Perimetro y Área</h5>
+                                <form>
+                                    <label for="radio">Radio</label>
+                                    <input type="number" class="form-control" id="radioC">
+                                    <button type="submit" class="btn btn-primary" onclick="areaCirculo()">Calcular Área</button>
+                                    <button type="submit" class="btn btn-primary" onclick="perimetroCirculo()">Calcular Perimetro</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Circulo-->
+
+    <!-- Modal Cuadrado-->
+            
+    <div class="modal fade" tabindex="-1" id="cuadrado" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                    Cuadrado
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-group">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Perimetro y Área</h5>
+                                <form>
+                                    <label for="radio">Lado</label>
+                                    <input type="number" class="form-control" id="ladocuad">
+                                    <button type="submit" class="btn btn-primary" onclick="areaCuadrado()">Calcular Área</button>
+                                    <button type="submit" class="btn btn-primary" onclick="perimetroCuadrado()">Calcular Perimetro</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cuadrado-->
+
+    <!-- Modal Rectangulo-->
+            
+    <div class="modal fade" tabindex="-1" id="rectangulo" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                    Rectangulo
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-group">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Perimetro y Área</h5>
+                                <form>
+                                    <label>Base</label>
+                                    <input type="number" class="form-control" id="baseR">
+
+                                    <label>Altura</label>
+                                    <input type="number" class="form-control" id="alturaR">
+
+                                    <button type="submit" class="btn btn-primary" onclick="areaRectangulo()">Calcular Área</button>
+                                    <button type="submit" class="btn btn-primary" onclick="perimetroRectangulo()">Calcular Perimetro</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Rectangulo-->
+
+    <!-- Modal Triangulo-->
+            
+    <div class="modal fade" tabindex="-1" id="triangulo" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                    Triangulo
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-group">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Área</h5>
+                                <form>
+                                    <label>Base</label>
+                                    <input type="number" class="form-control" id="baseT"> 
+                                    <label>Altura</label>
+                                    <input type="number" class="form-control" id="alturaT">
+                                    <button type="submit" class="btn btn-primary" onclick="areaTriangulo()">Calcular Área</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!--Pendiente poner un space between--> 
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Área</h5>
+                                <form>
+                                    <label>Lado 1</label>
+                                    <input type="number" class="form-control" id="lado1">
+                                    <label>Lado 2</label>
+                                    <input type="number" class="form-control" id="lado2">
+                                    <label>Lado 3</label>
+                                    <input type="number" class="form-control" id="lado3">
+                                    <button type="submit" class="btn btn-primary" onclick="perimetroTriangulo()">Calcular Perimetro</button>
+                                </form>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Triangulo-->
+
+
+</body>
+</html>
