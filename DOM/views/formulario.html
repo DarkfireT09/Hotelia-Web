@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Formulario con Javascript</title>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+    <main>
+        <h1>FORMULARIO</h1>
+        <form action="" class="formulario" id="formulario">
+            <div class="formulario__grupo" id="grupo__tipoDocumento">
+                <label for="tipoDocumento" class="formulario__label">Tipo de Documento</label>
+                <div class="formulario__grupo-input">
+                    <select name="tipoDocumento" id="tipoDocumento">
+                        <option value="cedula">Cédula de Ciudadanía</option>
+                        <option value="pasaporte">Pasaporte</option>
+                        <option value="tarjeta">Tarjeta de Identidad</option>
+                        <option value="registro">Registro Civil</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__documento">
+                <label for="documento" class="formulario__label">Documento</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" name="documento" id="documento">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ingrese solo números y la longitud debe ser de mínimo 5 caracteres</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" name="nombre" id="nombre">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Solo se reciben alfanuméricos</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__apellido">
+                <label for="apellido" class="formulario__label">Apellidos</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" name="apellido" id="apellido">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Solo se reciben alfanuméricos</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__nacimiento">
+                <label for="nacimiento" class="formulario__label">Fecha de Nacimiento</label>
+                <div class="formulario__grupo-input">
+                    <input type="date" name="nacimiento" id="nacimiento">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Usted debe ser mayor de 18 años para poder ingresar</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" name="correo" id="correo">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo debe ser del dominio @misena.edu.co</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__contrasena">
+                <label for="contrasena" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" name="constrasena" id="contrasena">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña debe incluir mínimo una letra mayúscula, un número, una letra minúscula, un carácter especial y debe ser mínimo de 10 caracteres.</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__valContrasena">
+                <label for="valContrasena" class="formulario__label">Confirmar contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" name="valContrasena" id="valContrasena">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los Terminos y Condiciones
+                </label>
+            </div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+    </main>
+    <script src="../JS/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
